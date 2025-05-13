@@ -1,3 +1,8 @@
+const fs = require("fs");
+
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
-console.log(link);
+
+fs.readFile(link, "uft-8", (erro, texto) => {
+  console.log(texto);
+});
