@@ -1,8 +1,18 @@
-const fs = require('fs');
+const fs = require("fs");
 
 const caminhoArquivo = process.argv;
-const link = caminhoArquivo[2]; 
+const link = caminhoArquivo[2];
 
-fs.readFile(link, 'utf-8', (erro, texto) => {
-  console.log(texto);
-})
+fs.readFile(link, "utf8", (erro, texto) => {
+  verificaPalavraDuplicadas(texto);
+});
+
+function verificaPalavraDuplicadas(texto) {
+  const listaPalavras = texto.split(" ");
+  const resultado = {};
+  // objeto[propiedade] = valor;
+  listaPalavras.forEach((palavra) => {
+    resultado[palavra] = (resultado[palavra] || 0) + 1;
+  });
+  console.log(resultado);
+}
