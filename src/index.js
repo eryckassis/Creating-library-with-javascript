@@ -4,8 +4,14 @@ const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
 
 fs.readFile(link, "utf8", (erro, texto) => {
-  verificaPalavraDuplicadas(texto);
+  quebraEmParagrafos(texto);
+  // verificaPalavraDuplicadas(texto);
 });
+
+function quebraEmParagrafos(texto) {
+  const paragrafos = texto.toLowerCase().split("\n");
+  console.log(paragrafos);
+}
 
 function verificaPalavraDuplicadas(texto) {
   const listaPalavras = texto.split(" ");
