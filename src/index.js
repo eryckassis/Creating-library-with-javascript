@@ -10,11 +10,11 @@ fs.readFile(link, "utf8", (erro, texto) => {
 
 function quebraEmParagrafos(texto) {
   const paragrafos = texto.toLowerCase().split("\n");
-  const contagem = paragrafos
-    .filter((paragrafo) => paragrafo)
-    .map((paragrafo) => {
-      return verificaPalavraDuplicadas(paragrafo);
-    });
+  const contagem = paragrafos.flatMap((paragrafo) => {
+    if (!paragrafo) return [];
+    return verificaPalavraDuplicadas(paragrafo);
+  });
+
   console.log(contagem);
 }
 
