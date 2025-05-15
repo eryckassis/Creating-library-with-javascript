@@ -1,6 +1,11 @@
 const fs = require("fs");
 
 const caminhoArquivo = process.argv;
+if (caminhoArquivo.length < 3) {
+  console.log("Por favor, forneça o caminho do arquivo como argumento.");
+  process.exit(1);
+}
+// O caminho do arquivo é o terceiro argumento
 const link = caminhoArquivo[2];
 
 fs.readFile(link, "utf8", (erro, texto) => {
