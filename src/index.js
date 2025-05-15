@@ -1,11 +1,6 @@
 const fs = require("fs");
 
 const caminhoArquivo = process.argv;
-if (caminhoArquivo.length < 3) {
-  console.log("Por favor, forneça o caminho do arquivo como argumento.");
-  process.exit(1);
-}
-// O caminho do arquivo é o terceiro argumento
 const link = caminhoArquivo[2];
 
 fs.readFile(link, "utf8", (erro, texto) => {
@@ -14,10 +9,6 @@ fs.readFile(link, "utf8", (erro, texto) => {
 });
 
 function quebraEmParagrafos(texto) {
-  const paragrafo = texto.split("\n");
-  const paragrafoSemVazio = paragrafo.filter((paragrafo) => {
-    return paragrafo.trim() !== "";
-  });
   const paragrafos = texto.toLowerCase().split("\n");
   const contagem = paragrafos.flatMap((paragrafo) => {
     if (!paragrafo) return [];
@@ -32,11 +23,6 @@ function limpaPalavras(palavra) {
 }
 
 function verificaPalavraDuplicadas(texto) {
-  const regex = /[.,!?;:]/g;
-  const regex2 = /\s+/g;
-  const regex3 = /[0-9]/g;
-  const regex4 = /[a-zA-Z]/g;
-  const regex5 = /[áàãâä]/g;
   const listaPalavras = texto.split(" ");
   const resultado = {};
   // objeto[propiedade] = valor;
