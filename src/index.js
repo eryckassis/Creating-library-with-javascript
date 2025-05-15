@@ -4,6 +4,7 @@ const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
 
 fs.readFile(link, "utf8", (erro, texto) => {
+  console.log("qual e o erro?");
   contaPalavras(texto);
   // verificaPalavraDuplicadas(texto);
 });
