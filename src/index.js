@@ -13,8 +13,6 @@ fs.readFile(link, "utf8", (erro, texto) => {
     } else {
       console.log("Erro ao ler o arquivo:");
     }
-    console.log("Erro ao ler o arquivo:", erro);
-    return;
   }
 });
 
