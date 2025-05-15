@@ -8,7 +8,7 @@ fs.readFile(link, "utf8", (erro, texto) => {
     console.log("Erro ao ler o arquivo:", erro);
     return;
   }
-  console.log("qual e o erro?");
+  console.log("qual e o erro?", erro.code);
   contaPalavras(texto);
   // verificaPalavraDuplicadas(texto);
 });
