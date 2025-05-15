@@ -1,6 +1,6 @@
 function trataErros(erro) {
   if (erro.code === "ENOENT") {
-    throw new Error("Arquivo nao encontrado");
+    return "Arquivo nao encontrado";
   } else {
     return "Erro na Aplicação";
   }

@@ -42,8 +42,4 @@ function verificaPalavraDuplicadas(texto) {
     }
   });
   return resultado;
-  // const palavrasDuplicadas = Object.entries(resultado).filter(
-  //   ([palavra, contagem]) => contagem > 1
-  // );
-  // return palavrasDuplicadas;
 }
