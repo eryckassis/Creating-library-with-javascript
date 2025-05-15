@@ -4,13 +4,12 @@ const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
 
 fs.readFile(link, "utf8", (erro, texto) => {
-  if (erro) {
+  try {
+    contaPalavras(texto);
+  } catch (erro) {
     console.log("Erro ao ler o arquivo:", erro);
     return;
   }
-  console.log("qual e o erro?", erro.code);
-  contaPalavras(texto);
-  // verificaPalavraDuplicadas(texto);
 });
 
 function contaPalavras(texto) {
