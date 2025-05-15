@@ -9,6 +9,10 @@ fs.readFile(link, "utf8", (erro, texto) => {
 });
 
 function quebraEmParagrafos(texto) {
+  const paragrafo = texto.split("\n");
+  const paragrafoSemVazio = paragrafo.filter((paragrafo) => {
+    return paragrafo.trim() !== "";
+  });
   const paragrafos = texto.toLowerCase().split("\n");
   const contagem = paragrafos.flatMap((paragrafo) => {
     if (!paragrafo) return [];
