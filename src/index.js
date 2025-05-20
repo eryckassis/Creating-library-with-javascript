@@ -1,7 +1,7 @@
 const fs = require("fs");
 const trataErros = require("./erros/funcoesErro");
 
-function contaPalavras(texto) {
+export function contaPalavras(texto) {
   const paragrafos = extraiParagrafos(texto);
   const contagem = paragrafos.flatMap((paragrafo) => {
     if (!paragrafo) return [];
