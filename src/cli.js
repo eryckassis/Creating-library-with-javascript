@@ -1,6 +1,8 @@
 import fs from "fs";
 import trataErros from "./erros/funcoesErro.js";
 import { contaPalavras } from "./index.js";
+import { fileURLToPath } from "url";
+import path from "path";
 
 const fs = require("fs");
 const trataErros = require("./erros/funcoesErro");
