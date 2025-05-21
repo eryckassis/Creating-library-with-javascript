@@ -1,7 +1,7 @@
 export default function trataErros(erro) {
   if (erro.code === "ENOENT") {
-    return "Arquivo nao encontrado";
+    throw new Error("Arquivo não encontrado");
   } else {
-    return "Erro na Aplicação";
+    return "Erro na aplicação";
   }
 }
