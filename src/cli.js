@@ -5,6 +5,8 @@ import { contaPalavras } from "./index.js";
 const fs = require("fs");
 const trataErros = require("./erros/funcoesErro");
 const { contaPalavras } = require("./index.js");
+const fs = require("fs");
+const trataErros = require("./erros/funcoesErro");
 
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
