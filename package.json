@@ -1,0 +1,21 @@
+{
+  "name": "creating-library-with-javascript",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img src=\"https://nodejs.org/static/images/logo.svg\" alt=\"Node.js Logo\" width=\"120\"/>\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eryckassis/Creating-library-with-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/eryckassis/Creating-library-with-javascript/issues"
+  },
+  "homepage": "https://github.com/eryckassis/Creating-library-with-javascript#readme"
+}
