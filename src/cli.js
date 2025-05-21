@@ -1,5 +1,6 @@
 import fs from "fs";
 import trataErros from "./erros/funcoesErro.js";
+import { contaPalavras } from "./index.js";
 
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
