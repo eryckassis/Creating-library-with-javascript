@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "commander": "^14.0.0",
     "creating-library-with-javascript": "file:"
   }
 }

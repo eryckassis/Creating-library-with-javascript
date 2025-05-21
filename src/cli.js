@@ -2,6 +2,23 @@ import fs from "fs";
 import trataErros from "./erros/funcoesErro.js";
 import { contaPalavras } from "./index.js";
 import { montaSaidaArquivo } from "./helpers.js";
+import { Command } from "commander";
+
+const program = new Command();
+
+program
+  .version("0.0.1")
+  .option("-t, --texto  </string>", "Caminho a ser processado")
+  .option("-d, --destino  </string>", "Caminho de destino")
+  .action((options) => {
+    const { texto, destino } = options;
+
+    if (!texto || !destino) {
+      console.error("erro: favor inserir caminho de origem e destino");
+      program.help();
+      return;
+    }
+  });
 
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
