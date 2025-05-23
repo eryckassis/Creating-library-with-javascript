@@ -34,3 +34,5 @@ function verificaPalavrasDuplicadas(texto) {
 //   return verificaPalavrasDuplicadas(paragrafo);
 // });
 // return contagem;
+// excelente
+//
