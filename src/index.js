@@ -25,5 +25,6 @@ function verificaPalavrasDuplicadas(texto) {
     }
   });
   return resultado;
+  console.log("Resultado", resultado);
 }
 //
