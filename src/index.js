@@ -26,3 +26,11 @@ function verificaPalavrasDuplicadas(texto) {
   });
   return resultado;
 }
+//
+// function contaPalavras(texto) {
+//   const paragrafos = extraiParagrafos(texto);
+// const contagem = paragrafos.flatMap((paragrafo) => {
+//   if (!paragrafo) return [];
+//   return verificaPalavrasDuplicadas(paragrafo);
+// });
+// return contagem;
