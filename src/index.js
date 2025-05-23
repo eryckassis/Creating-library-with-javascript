@@ -13,6 +13,11 @@ function extraiParagrafos(texto) {
 
 function limpaPalavras(palavra) {
   return palavra.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+  // .replace(/\s+/g, " ");
+  // .trim();
+  // .replace(/^\s+|\s+$/g, "");
+  // .replace(/^\s+|\s+$/g, "");
+  // .replace(/^\s+|\s+$/g, "");
 }
 
 function verificaPalavrasDuplicadas(texto) {
@@ -25,6 +30,5 @@ function verificaPalavrasDuplicadas(texto) {
     }
   });
   return resultado;
-  console.log("Resultado", resultado);
 }
 //
