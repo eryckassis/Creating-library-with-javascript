@@ -26,3 +26,7 @@ function verificaPalavrasDuplicadas(texto) {
   });
   return resultado;
 }
+// function filtraOcoreencias(paragrafos) {
+//   return Object.keys(paragrafo).filter((chave) => paragrafo[chave] > 1);
+// }
+//
