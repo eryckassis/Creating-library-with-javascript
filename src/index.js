@@ -26,3 +26,4 @@ function verificaPalavrasDuplicadas(texto) {
   });
   return resultado;
 }
+//
